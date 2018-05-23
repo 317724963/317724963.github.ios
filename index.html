@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script> 
+		window.onload = function() {   
+     	document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';
+		window.onresize = function() {            
+     	document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';        };
+ 		};
+ 		</script>
+		<script type="text/javascript" src="../jquery-2.1.0.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/zuoye.css"/>		
+		<style type="text/css">		
+		</style>
+	</head>
+	<body>
+   	<div class="main">   		
+   <div class="container-fluid">
+   	<!--shang-->
+   <div class="row tu">  
+   <div class="col-md-12 xi">
+      <div class="row logo">
+      	 <div class="col-md-4 xian">
+             <div class="get ">
+      	    	人生第一问
+      	    </div>
+      	 </div>
+      	 <div class="col-md-8">
+      	 	<ul class="nav">
+      	 		<li class="zi"><a href="#miao">我的资料</a></li>
+      	 		<li class="yinyue"><a href="#miao">我喜欢的音乐</a></li>
+
+      	 		<li class="book"><a href="#miao">我喜欢的书</a></li>
+      	 		
+      	 		<li class="tupian"><a href="#miao">我的相册</a> </li>
+      	 		<li class="mubiao"><a href="#miao">我的目标</a> </li>
+      	 		
+      	 	
+      	 	</ul>
+      	  
+      	 </div>
+      </div>
+      
+     
+   </div>
+   
+   
+      <div class="row">
+     <div class="col-md-12 ">
+   	 <div class="sun" id="miao">
+        
+        <div class="xinxi active">
+        	<p><span>my-name:</span>孙晋鹏</p>
+        	<p><span>外貌 :</span>清新俊逸  品貌非凡  才貌双绝  惊才风逸说的都不是我</p>
+        	<p><span>自我评价:</span>觉得自己其实还是一个内向的人，只不过现在变得有点逗比，做到了心中有b数，却没有任何行动</p>
+        </div>
+        <div class="misic"style="display: none;">
+        	<p><span>喜欢的音乐:</span>果车   椿   留在南京  记昨日书  焚心以火 INTO THE FLAME</p>
+        </div>
+        <div class="shu" style="display: none;">
+        	<p>	<span>喜欢的书:</span>《雪中悍刀行》 《剑来》 感觉真的有学到东西</p>
+        </div>
+        <div class="xiangce" style="display: none;">
+        	<img src="" alt="" />
+        	<img src="" alt="" />
+        	<img src="" alt="" />
+        </div>
+         <div class="mu" style="display: none;">
+        	<span>一个小目标:</span>活的好好的
+        </div>
+        
+        
+        
+        
+        
+   	 </div>
+   </div>
+ </div>
+   
+   
+   
+   <div class="row">
+   	<div class="col-md-12 lunb">
+   	
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner qwe" role="listbox">
+    <div class="item active">
+    	<div class="qwee">
+    		<p>世间遗憾事，往往起始于再见二字。 </p>
+    	<div class="yiiy"></div>
+    	<p class="wee">而世间幸运事，又往往在于之后真正再见之时。 </p></div>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+    <div class="qweer">
+    	<p>情不知所起，一往而深 </p>
+    	<div class="erre"></div>
+    	<p class="wee">可惜大多由深转浅，相忘江湖 </p>
+    </div>
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div> 
+  </div>
+   </div>
+   </div>
+   
+   
+   
+
+   
+   
+   <div class="row">
+     <div class="col-md-12  wen">
+   	 <p> Do you like me?</p>
+   </div>
+ </div>
+   
+   
+   
+   
+   
+   
+   
+    <div class="row">
+     <div class="col-md-12 ">
+     	<div class="bnt">
+    <div class="button yes" >
+   		Yes
+   	</div>
+   	<div class="button no" >
+   		NO
+   	</div>
+     	</div>
+   	
+   </div>
+ </div>
+   
+   </div>
+  
+  
+    </div>
+
+   
+   
+   	</div>
+   	<script type="text/javascript">
+   		var myname =  document.querySelector('.get');
+   		var zi =  document.querySelector('.zi');
+   		
+   		var yinyue =  document.querySelector('.yinyue');
+   		
+   		var book =  document.querySelector('.book');
+   		var tupian =  document.querySelector('.tupian');
+   		var sun =  document.querySelector('.sun');
+   		var xuan = document.querySelectorAll('.nav li')
+   		var xiang = document.querySelectorAll('.sun div')
+   		var yes = document.querySelector('.yes')
+   		var no = document.querySelector('.no')
+   		for(var i=0; i<xuan.length;i++){
+   			xuan[i].index = i;
+   			xuan[i].onclick=function(){
+   				for(var i=0; i<xuan.length;i++){
+   					xuan[i].className=''
+   					　xiang[i].style.display='none';
+   				}
+   					xuan[this.index].className='active'
+   					　xiang[this.index].style.display='block';
+   			}
+   		}
+   		
+   	myname.onclick = function(){
+   		myname.innerHTML='孙晋鹏'
+   		myname.style.fontSize = '18px'
+   	}
+   		var ha = true
+// 		yes.onmousemove = function(){
+// 		
+// 			
+// 				yes.innerHTML = 'Yes'
+// 			
+// 			
+// 		}
+   		no.onmousemove = function(){
+   			no.innerHTML = 'Yes'
+   			yes.innerHTML = 'NO'
+   		}
+   		no.onmouseout = function(){
+   			no.innerHTML = 'No'
+   			yes.innerHTML = 'Yes'
+   		}
+   		
+   		
+   	</script>
+	</body>
+</html>
